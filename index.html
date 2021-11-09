@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Draggable Div </title>
+  <link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+</head>
+
+<style>
+    .box {
+  width: 200px; 
+  height: 200px; 
+  background-color: rgb(33, 204, 247); 
+  border-radius: 5px;
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+  font-family: helvetica, verdana; 
+}
+</style>
+<body>
+ 
+
+        <div class="box">Drag Me</div>   
+        <div class="box">Drag Me</div>   
+        <div class="box">Drag Me</div>   
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script>
+  $(document).ready(function(){
+    $('.box').draggable({ scroll: true, cursor: "move"});
+});
+</script>
+
+</body>
+</html>
